@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "571747582065",
+    "project_id": "publiclibraries-a2578",
+    "storage_bucket": "publiclibraries-a2578.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571747582065:android:a18c220bffb54ad0325bd0",
+        "android_client_info": {
+          "package_name": "lk.viva.publiclibraries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571747582065-jvt4i2uo0jq7l65rka6kn02fsnbf2919.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9lqIx_F0rP2flkJRHuiIMaRpD-AfJTQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571747582065-jvt4i2uo0jq7l65rka6kn02fsnbf2919.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

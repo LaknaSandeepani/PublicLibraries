@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_status">
+        <item>Select Your Status.....</item>
+        <item>Child</item>
+        <item>Married</item>
+        <item>Unmarried</item>
+    </string-array>
+    <string-array name="array_district">
+        <item>Select Your District.....</item>
+        <item>Colombo</item>
+        <item>Gampaha</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Matale</item>
+        <item>Nuwara Eliya</item>
+        <item>Galle</item>
+        <item>Matara</item>
+        <item>Hambantota</item>
+        <item>Jaffna</item>
+        <item>Kilinochchi</item>
+        <item>Mannar</item>
+        <item>Vavuniya</item>
+        <item>Mullaitivu</item>
+        <item>Batticaloa</item>
+        <item>Ampara</item>
+        <item>Trincomalee</item>
+        <item>Kurunegala</item>
+        <item>Puttalam</item>
+        <item>Anuradhapura</item>
+        <item>Polonnaruwa</item>
+        <item>Badulla</item>
+        <item>Moneragala</item>
+        <item>Ratnapura</item>
+        <item>Kegalle</item>
+    </string-array>
+    <string-array name="array_library">
+        <item>Select Your Library.....</item>
+        <item>Colombo Public Library</item>
+        <item>Kalutara Public Library</item>
+        <item>Dehiwala Central Library</item>
+        <item>Negombo Public Library</item>
+        <item>Horana Public Library</item>
+    </string-array>
+    <string-array name="list_room">
+        <item>Select the Room.....</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="list_seat">
+        <item>Select the Seat Number.....</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+</resources>

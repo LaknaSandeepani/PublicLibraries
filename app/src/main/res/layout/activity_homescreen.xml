@@ -44,6 +44,7 @@
                     android:layout_width="91dp"
                     android:layout_height="107dp"
                     android:background="@drawable/books"
+                    android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.495"
@@ -58,6 +59,7 @@
                     android:layout_marginLeft="5dp"
 
                     android:background="@drawable/ebooks"
+                    android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.495"
@@ -72,6 +74,7 @@
                     android:layout_marginLeft="5dp"
 
                     android:background="@drawable/seat"
+                    android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.495"
@@ -86,6 +89,7 @@
                     android:layout_marginLeft="5dp"
 
                     android:background="@drawable/story"
+                    android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.495"
@@ -99,6 +103,7 @@
                     android:layout_height="107dp"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/story"
+                    android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.495"

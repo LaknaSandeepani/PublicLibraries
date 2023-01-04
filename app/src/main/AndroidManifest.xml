@@ -16,10 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".ReserveBookActivity"
+            android:name=".BookListActivity"
             android:exported="false" />
         <activity
-            android:name=".BookListActivity"
+            android:name=".ReserveBookActivity"
             android:exported="false" />
         <activity
             android:name=".WaitActivity"

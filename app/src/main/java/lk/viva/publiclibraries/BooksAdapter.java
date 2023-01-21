@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
 
 import java.util.ArrayList;
 
@@ -24,6 +23,12 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
         this.context = context;
         this.list = list;
     }
+
+//    public static void setFilteredList(ArrayList<Books> filteredList) {
+//        this.list = filteredList;
+//        notifyDataSetChanged();
+//
+//    }
 
     @NonNull
     @Override

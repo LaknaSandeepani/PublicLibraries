@@ -33,6 +33,7 @@ public class BookListActivity extends AppCompatActivity {
     BooksAdapter booksAdapter;
     ArrayList<Books>list;
     StorageReference storageReference;
+//    SearchView searchView;
 
 
 
@@ -42,6 +43,20 @@ public class BookListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_list);
         // Assign FirebaseStorage instance to storageReference.
+//        searchView = findViewById(R.id.searchview);
+//        searchView.clearFocus();
+//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String query) {
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//                filerList(newText);
+//                return true;
+//            }
+//        });
         storageReference = FirebaseStorage.getInstance().getReference();
         recyclerView = findViewById(R.id.booklist);
         database = FirebaseDatabase.getInstance().getReference("books");
@@ -72,4 +87,23 @@ public class BookListActivity extends AppCompatActivity {
         });
 
     }
+
+//    private void filerList(String text) {
+//        ArrayList<Books> filteredList = new ArrayList<>();
+//        for (Books books : list){
+//            if (books.getTitle().toLowerCase().contains(text.toLowerCase())) {
+//                filteredList.add(books);
+//            }
+//
+//        }
+//        if (filteredList.isEmpty()) {
+//            Toast.makeText(this, "No Data Found", Toast.LENGTH_SHORT).show();
+//        }else{
+//
+//            BooksAdapter.setFilteredList(filteredList);
+//
+//
+//        }
+//
+//    }
 }

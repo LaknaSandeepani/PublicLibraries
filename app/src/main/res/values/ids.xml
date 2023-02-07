@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="idLLsearch" type="id" />
+    <item name="idEdtSearchBooks" type="id" />
+    <item name="idBtnSearch" type="id" />
+</resources>

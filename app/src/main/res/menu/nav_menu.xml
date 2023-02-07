@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/login"
+            android:title="login"
+            />
+        <item android:id="@+id/Myaddress"
+            android:title="My address"
+            />
+        <item android:id="@+id/Myorders"
+            android:title="My orders"
+            />
+        <item android:id="@+id/mycart"
+            android:title="mycart"
+            />
+    </group>
+    <group android:checkableBehavior="single" >
+        <item android:title="other">
+            <menu>
+                <item android:title="bulk order"/>
+                <item android:title="FAQ"/>
+                <item android:title="Rate Us"/>
+            </menu>
+        </item>
+    </group>
+</menu>

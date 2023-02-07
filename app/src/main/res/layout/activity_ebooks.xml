@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eeeee4"
     tools:context=".eBooksActivity">
 
 
@@ -21,6 +22,7 @@
                 android:id="@+id/idEdtSearchBooks"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                app:queryHint="Search Here....."
                 android:layout_weight="4" />
 
             <!--image button for our search button -->

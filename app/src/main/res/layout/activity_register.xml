@@ -139,37 +139,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/array_district"/>
-        <TextView
-            android:id="@+id/library"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Library"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"/>
-        <Spinner
-            android:id="@+id/sp_library"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:entries="@array/array_library"/>
-
 <!--        <TextView-->
-<!--            android:id="@+id/attach"-->
+<!--            android:id="@+id/library"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
-<!--            android:text="Attachments"-->
+<!--            android:text="Library"-->
 <!--            android:textSize="16sp"-->
 <!--            android:layout_marginTop="20dp"/>-->
-<!--        <EditText-->
-<!--            android:id="@+id/txtattach"-->
+<!--        <Spinner-->
+<!--            android:id="@+id/sp_library"-->
 <!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="200dp"-->
-<!--            android:padding="10dp"-->
-<!--            android:gravity="top"-->
-<!--            android:hint="Please Attach Scanned Copies Of Your Birth Certificate and NIC."-->
-<!--            android:inputType="textMultiLine"-->
-<!--            android:textSize="14sp"-->
-<!--            android:layout_marginTop="20dp"/>-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:entries="@array/array_library"/>-->
+
+        <TextView
+            android:id="@+id/attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Rs.1000/= Fee and Attach your Recipt"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/txtattachment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:gravity="top"
+            android:hint="Please Attach the Payment Recipt."
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"/>
 
         <Button
             android:id="@+id/btn_register"

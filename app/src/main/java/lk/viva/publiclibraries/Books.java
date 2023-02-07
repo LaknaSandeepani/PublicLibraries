@@ -1,7 +1,7 @@
 package lk.viva.publiclibraries;
 
 public class Books {
-    String bookimage,title,publisher;
+    String bookimage,title,publisher,description;
 
     public String getBookimage() {
         return bookimage;
@@ -14,4 +14,7 @@ public class Books {
     public String getPublisher() {
         return publisher;
     }
+//    public String getDescription() {
+//        return description;
+//    }
 }

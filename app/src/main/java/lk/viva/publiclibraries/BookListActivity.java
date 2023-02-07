@@ -26,7 +26,7 @@ import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 
-public class BookListActivity extends AppCompatActivity {
+public class BookListActivity extends AppCompatActivity   {
 
     RecyclerView recyclerView;
     DatabaseReference database;
@@ -88,6 +88,13 @@ public class BookListActivity extends AppCompatActivity {
 
     }
 
+//    @Override
+//    public void onItemClicked(int position) {
+//        Intent intent = new Intent(BookListActivity.this, StoryActivity.class);
+//        intent.putExtra("title",list.get(position).getTitle());
+//        startActivity(intent);
+//    }
+
 //    private void filerList(String text) {
 //        ArrayList<Books> filteredList = new ArrayList<>();
 //        for (Books books : list){
@@ -106,4 +113,5 @@ public class BookListActivity extends AppCompatActivity {
 //        }
 //
 //    }
+
 }

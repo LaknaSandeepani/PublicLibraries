@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity{
         radioGroup = findViewById(R.id.rb_gender);
         status = findViewById(R.id.sp_status);
         district = findViewById(R.id.sp_district);
-        library = findViewById(R.id.sp_library);
+//        library = findViewById(R.id.sp_library);
         register = findViewById(R.id.btn_register);
 
 

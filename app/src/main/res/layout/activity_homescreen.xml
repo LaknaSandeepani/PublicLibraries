@@ -102,7 +102,7 @@
                     android:layout_width="91dp"
                     android:layout_height="107dp"
                     android:layout_marginLeft="5dp"
-                    android:background="@drawable/story"
+                    android:background="@drawable/wishlist"
                     android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -110,12 +110,46 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.454" />
-
+0
             </LinearLayout>
 
         </HorizontalScrollView>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="158dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/read" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="145dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:text="A library is a collection of sources of information and similar resources, made accessible to a defined community for reference or borrowing. It provides physical or digital access to material and may be a physical building or room, or a virtual space, or both."
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="409dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--    <com.google.android.material.navigation.NavigationView-->
 <!--        android:layout_width="409dp"-->

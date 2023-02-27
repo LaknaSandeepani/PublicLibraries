@@ -9,7 +9,7 @@ import android.net.Uri;
 import android.widget.ImageButton;
 
 public class HomescreenActivity extends AppCompatActivity{
-    ImageButton btnbooks, btneBooks, btnseat, btnstory;
+    ImageButton btnbooks, btneBooks, btnseat, btnstory, btnmore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class HomescreenActivity extends AppCompatActivity{
         btneBooks = (ImageButton) findViewById(R.id.btn_ebooks);
         btnseat = (ImageButton) findViewById(R.id.btn_seat);
         btnstory = (ImageButton) findViewById(R.id.btn_story);
+        btnmore = (ImageButton) findViewById(R.id.btn_more);
 
         btnbooks.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +52,12 @@ public class HomescreenActivity extends AppCompatActivity{
                 OpenWhatsapp();
             }
         });
+        btnmore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AdminActivities();
+            }
+        });
     }
     public void OpenBooks(){
         Intent intent = new Intent(this,BookListActivity.class);
@@ -75,5 +82,9 @@ public class HomescreenActivity extends AppCompatActivity{
         intentWhatsapp.setPackage("com.whatsapp");
         startActivity(intentWhatsapp);
 
+    }
+    private void AdminActivities() {
+        Intent intent = new Intent(this, AdminTasksActivity.class);
+        startActivity(intent);
     }
 }

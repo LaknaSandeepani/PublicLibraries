@@ -2,6 +2,8 @@ package lk.viva.publiclibraries;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +18,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 import java.util.ArrayList;
 
@@ -31,11 +34,13 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
 
     }
 
-//    public static void setFilteredList(ArrayList<Books> filteredList) {
-//        this.list = filteredList;
-//        notifyDataSetChanged();
-//
+    public BooksAdapter(FirebaseRecyclerOptions<Books> options) {
+    }
+//for search
+//    public BooksAdapter(FirebaseRecyclerOptions<Books> options) {
+//        super();
 //    }
+//
 
     @NonNull
     @Override
@@ -47,7 +52,6 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
     @Override
     public void onBindViewHolder(@NonNull myViewHolder holder, int position) {
         Books books = list.get(position);
-//        holder.bookimage.setText(books.getBookimage());
         //Loading image from Glide library.
         Glide.with(context).load(books.getBookimage()).into(holder.bookimage);
         holder.title.setText(books.getTitle());
@@ -74,7 +78,15 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
         return list.size();
     }
 
+    public void startListening() {
+    }
 
+
+//for search
+//    public void startListening() {
+//        super.notify();
+//    }
+//
 
     public static class myViewHolder extends RecyclerView.ViewHolder{
         TextView title, publisher,description;
@@ -86,28 +98,8 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
             title = (TextView) itemView.findViewById(R.id.BookTitle);
             publisher = (TextView) itemView.findViewById(R.id.publisher);
             cardView = itemView.findViewById(R.id.book_container);
-//            description =(TextView) itemView.findViewById(R.id.txt_description);
-//            itemView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    Intent i = new Intent(view.getContext(), ClickviewActivity.class);
-//                    i.putExtra("title", (Parcelable) list.get(getAbsoluteAdapterPosition()));
-//                    view.getContext().startActivity(i);
-//
-//                }
-//            });
-//            itemView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    if (listener != null){
-//                        int pos = getAbsoluteAdapterPosition();
-//
-//                        if (pos != RecyclerView.NO_POSITION){
-//                       listener.onItemClicked(pos);
-//                   }
-//                }
-//                }
-//            });
+
+
 
         }
     }

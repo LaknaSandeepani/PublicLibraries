@@ -3,25 +3,25 @@ package lk.viva.publiclibraries;
 import android.widget.EditText;
 
 public class UserHelperClass {
-    String Fname,Lname,Gender,Nic,Address,Phone,Email,Status,District,Library;
+    String Fname,Lname,Gender,Email,EnrollNo,CardNo,Password,Confirmpwd, Type;;
 
     public UserHelperClass() {
     }
 
-    public UserHelperClass(String fname, String lname, String gender, String nic, String address, String phone, String email,String status,String district,String library) {
+
+    public UserHelperClass(String fname, String lname, String gender, String email, String enrollNo, String cardNo, String password, String confirmpwd, String type) {
         Fname = fname;
         Lname = lname;
         Gender = gender;
-        Nic = nic;
-        Address = address;
-        Phone = phone;
         Email = email;
-        Status = status;
-        District = district;
-        Library = library;
+        EnrollNo = enrollNo;
+        CardNo = cardNo;
+        Password = password;
+        Confirmpwd = confirmpwd;
+        Type = type;
+
 
     }
-
     public String getFname() {
         return Fname;
     }
@@ -34,40 +34,16 @@ public class UserHelperClass {
         return Lname;
     }
 
-    public void setLname(String gender) {
-        Gender = gender;
+    public void setLname(String lname) {
+        Lname = lname;
     }
+
     public String getGender() {
         return Gender;
     }
 
     public void setGender(String gender) {
         Gender = gender;
-    }
-
-    public String getNic() {
-        return Nic;
-    }
-
-    public void setNic(String nic) {
-        Nic = nic;
-    }
-
-
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String address) {
-        Address = address;
-    }
-
-    public String getPhone() {
-        return Phone;
-    }
-
-    public void setPhone(String phone) {
-        Phone = phone;
     }
 
     public String getEmail() {
@@ -77,25 +53,46 @@ public class UserHelperClass {
     public void setEmail(String email) {
         Email = email;
     }
-    public String getStatus() {
-        return Status;
+
+    public String getEnrollNo() {
+        return EnrollNo;
     }
 
-    public void setStatus(String status) {
-        Status = status;
-    }
-    public String getDistrict() {
-        return District;
+    public void setEnrollNo(String enrollNo) {
+        EnrollNo = enrollNo;
     }
 
-    public void setDistrict(String district) {
-        District = district;
-    }
-    public String getLibrary() {
-        return Library;
+    public String getCardNo() {
+        return CardNo;
     }
 
-    public void setLibrary(String library) {
-        Library = library;
+    public void setCardNo(String cardNo) {
+        CardNo = cardNo;
     }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public String getConfirmpwd() {
+        return Confirmpwd;
+    }
+
+    public void setConfirmpwd(String confirmpwd) {
+        Confirmpwd = confirmpwd;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+
 }

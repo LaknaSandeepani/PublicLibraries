@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="lk.viva.publiclibraries">
+    package="lk.viva.publiclibraries" >
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -14,7 +14,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".AdminUpdateBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRemoveBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTasksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
         <activity
             android:name=".ClickviewActivity"
             android:exported="false" />
@@ -26,9 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".rotate"
-            android:exported="false" />
-        <activity
-            android:name=".ReserveBookActivity"
             android:exported="false" />
         <activity
             android:name=".BookListActivity"
@@ -59,7 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

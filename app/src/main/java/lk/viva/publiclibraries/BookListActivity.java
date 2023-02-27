@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -15,10 +17,12 @@ import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -33,7 +37,7 @@ public class BookListActivity extends AppCompatActivity   {
     BooksAdapter booksAdapter;
     ArrayList<Books>list;
     StorageReference storageReference;
-//    SearchView searchView;
+    SearchView searchView;
 
 
 
@@ -42,21 +46,38 @@ public class BookListActivity extends AppCompatActivity   {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_list);
-        // Assign FirebaseStorage instance to storageReference.
-//        searchView = findViewById(R.id.searchview);
-//        searchView.clearFocus();
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                filerList(newText);
-//                return true;
-//            }
-//        });
+
+        //Search view - not working
+        searchView = findViewById(R.id.searchview);
+        searchView.clearFocus();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                filterList(s);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                filterList(s);
+                return true;
+            }
+
+            private void filterList(String s) {
+                FirebaseRecyclerOptions<Books> options =
+                        new FirebaseRecyclerOptions.Builder<Books>()
+                                .setQuery(FirebaseDatabase.getInstance().getReference().child("books").orderByChild("title").startAt(s).endAt(s+"\uf8ff"), Books.class)
+                                .build();
+
+                booksAdapter = new BooksAdapter(options);
+                booksAdapter.startListening();
+                recyclerView.setAdapter(booksAdapter);
+
+
+
+            }
+        });
+        // for search end
         storageReference = FirebaseStorage.getInstance().getReference();
         recyclerView = findViewById(R.id.booklist);
         database = FirebaseDatabase.getInstance().getReference("books");
@@ -86,32 +107,8 @@ public class BookListActivity extends AppCompatActivity   {
             }
         });
 
+
+
     }
-
-//    @Override
-//    public void onItemClicked(int position) {
-//        Intent intent = new Intent(BookListActivity.this, StoryActivity.class);
-//        intent.putExtra("title",list.get(position).getTitle());
-//        startActivity(intent);
-//    }
-
-//    private void filerList(String text) {
-//        ArrayList<Books> filteredList = new ArrayList<>();
-//        for (Books books : list){
-//            if (books.getTitle().toLowerCase().contains(text.toLowerCase())) {
-//                filteredList.add(books);
-//            }
-//
-//        }
-//        if (filteredList.isEmpty()) {
-//            Toast.makeText(this, "No Data Found", Toast.LENGTH_SHORT).show();
-//        }else{
-//
-//            BooksAdapter.setFilteredList(filteredList);
-//
-//
-//        }
-//
-//    }
 
 }

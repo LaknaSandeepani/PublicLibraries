@@ -8,6 +8,11 @@
         <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/drawable/round_button.xml" value="0.1675" />
         <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/drawable/search_view_bg.xml" value="0.1695" />
         <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout-v3/activity_reserve_book.xml" value="0.215625" />
+        <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_admin_add_book.xml" value="0.215625" />
+        <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_admin_home.xml" value="0.215625" />
+        <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_admin_remove_book.xml" value="0.215625" />
+        <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_admin_tasks.xml" value="0.215625" />
+        <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_admin_update_book.xml" value="0.215625" />
         <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_after_reserve.xml" value="0.2015625" />
         <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_book_list.xml" value="0.19067028985507245" />
         <entry key="..\:/Users/lakna attigala/AndroidStudioProjects/PublicLibraries/app/src/main/res/layout/activity_books_details.xml" value="0.15" />

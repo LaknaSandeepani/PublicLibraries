@@ -28,11 +28,15 @@
 
     <ImageView
         android:id="@+id/book_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="153dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="131dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="152dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_newtitle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 

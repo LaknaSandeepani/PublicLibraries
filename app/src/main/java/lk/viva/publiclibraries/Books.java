@@ -3,6 +3,7 @@ package lk.viva.publiclibraries;
 public class Books {
     String bookimage,title,publisher,description;
 
+
     public String getBookimage() {
         return bookimage;
     }

@@ -29,6 +29,7 @@ public class eBookAdapter extends RecyclerView.Adapter<eBookAdapter.eBookViewHol
 
     @NonNull
     @Override
+
     public eBookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // inflating our layout for item of recycler view item.
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.book_rv_item, parent, false);
@@ -67,6 +68,7 @@ public class eBookAdapter extends RecyclerView.Adapter<eBookAdapter.eBookViewHol
                 i.putExtra("previewLink", bookInfo.getPreviewLink());
                 i.putExtra("infoLink", bookInfo.getInfoLink());
                 i.putExtra("buyLink", bookInfo.getBuyLink());
+
 
                 // after passing that data we are
                 // starting our new intent.

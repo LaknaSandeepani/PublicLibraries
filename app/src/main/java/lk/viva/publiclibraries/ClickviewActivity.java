@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide;
 public class ClickviewActivity extends AppCompatActivity {
     TextView txt_newtitle;
     ImageView book_image;
-
+    int x = 0;
 
 
     @SuppressLint("ClickableViewAccessibility")
@@ -37,25 +37,44 @@ public class ClickviewActivity extends AppCompatActivity {
                 .load(bookimage)
                 .into(imageView);
 //    ToDo - not working......
-        imageView.setOnTouchListener(new View.OnTouchListener() {
-            private float lastX;
-
+//        book_image.setOnTouchListener(new View.OnTouchListener() {
+//            private float lastX;
+//
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                switch (event.getActionMasked()) {
+//                    case MotionEvent.ACTION_DOWN:
+//                        lastX = event.getRawX();
+//                        break;
+//                    case MotionEvent.ACTION_MOVE:
+//                        float dx = event.getRawX() - lastX;
+//                        float x = v.getX() + dx;
+//                        if (x > 0 && x < v.getWidth() - v.getMeasuredWidth()) {
+//                            v.setX(x);
+//                        }
+//                        lastX = event.getRawX();
+//                        break;
+//                }
+//                return true;
+//            }
+//        });
+        book_image.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getActionMasked()) {
-                    case MotionEvent.ACTION_DOWN:
-                        lastX = event.getRawX();
-                        break;
-                    case MotionEvent.ACTION_MOVE:
-                        float dx = event.getRawX() - lastX;
-                        float x = v.getX() + dx;
-                        if (x > 0 && x < v.getWidth() - v.getMeasuredWidth()) {
-                            v.setX(x);
-                        }
-                        lastX = event.getRawX();
-                        break;
+            public void onClick(View view) {
+                if(x==0){
+                    book_image.animate().rotation(90);
+                    x=1;
                 }
-                return true;
+                else if(x==1){
+                    book_image.animate().rotation(0);
+                    x=2;
+                }else if(x==2){
+                    book_image.animate().rotation(-90);
+                    x=3;
+                }else if(x==3){
+                    book_image.animate().rotation(0);
+                    x=0;
+                }
             }
         });
 

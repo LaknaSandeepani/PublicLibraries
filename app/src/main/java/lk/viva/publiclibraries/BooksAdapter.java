@@ -28,14 +28,15 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
     static ArrayList<Books>list;
 
 
+
     public BooksAdapter(Context context, ArrayList<Books> list) {
         this.context = context;
         this.list = list;
 
     }
 
-    public BooksAdapter(FirebaseRecyclerOptions<Books> options) {
-    }
+//    public BooksAdapter(FirebaseRecyclerOptions<Books> options) {
+//    }
 //for search
 //    public BooksAdapter(FirebaseRecyclerOptions<Books> options) {
 //        super();
@@ -78,8 +79,8 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.myViewHolder
         return list.size();
     }
 
-    public void startListening() {
-    }
+//    public void startListening() {
+//    }
 
 
 //for search

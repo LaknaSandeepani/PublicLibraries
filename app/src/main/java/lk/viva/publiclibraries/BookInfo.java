@@ -18,6 +18,9 @@ public class BookInfo {
     private String infoLink;
     private String buyLink;
 
+
+
+
     // creating getter and setter methods
     public String getTitle() {
         return title;
@@ -122,6 +125,7 @@ public class BookInfo {
         this.previewLink = previewLink;
         this.infoLink = infoLink;
         this.buyLink = buyLink;
+
     }
 }
 

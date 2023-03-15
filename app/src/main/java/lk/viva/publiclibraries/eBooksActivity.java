@@ -110,6 +110,7 @@ public class eBooksActivity extends AppCompatActivity {
                         String infoLink = volumeObj.optString("infoLink");
                         JSONObject saleInfoObj = itemsObj.optJSONObject("saleInfo");
                         String buyLink = saleInfoObj.optString("buyLink");
+
                         ArrayList<String> authorsArrayList = new ArrayList<>();
                         if (authorsArray.length() != 0) {
                             for (int j = 0; j < authorsArray.length(); j++) {
